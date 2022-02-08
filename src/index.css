@@ -1,3 +1,5 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css";
+
 body{
   margin-top:20px;
   background:#eee;
@@ -9,7 +11,6 @@ body{
 .contacts-labels .title {
   font-size: 16px;
   line-height: 112px;
-  background: url("http://91.234.35.26/iwiki-admin/v1.0.0/admin/img/icon-42.png") 0 50% no-repeat;
   padding: 0 0 0 32px;
   color: #333333;
   overflow: hidden;
@@ -133,7 +134,7 @@ button {
 }
 .contacts-list {
   border-left: 1px solid #d8d8d8;
-  margin: -20px 0 40px;
+  margin-bottom: 40px;
 }
 .contacts-list .title {
   padding: 0 0 0 20px;
@@ -203,7 +204,7 @@ input {
 }
 .contacts-list .unit .name {
   width: 40%;
-  padding: 0 0 0 80px;
+  padding: 0 0 0 30px;
   position: relative;
 }
 .contacts-list .unit .name .check {
@@ -250,13 +251,10 @@ input {
   line-height: 46px;
 }
 .contacts-list .icons .icon-folder {
-  background: url("http://91.234.35.26/iwiki-admin/v1.0.0/admin/img/icon-9.png") no-repeat 50% 50%;
 }
 .contacts-list .icons .icon-label {
-  background: url("http://91.234.35.26/iwiki-admin/v1.0.0/admin/img/icon-5.png") no-repeat 50% 50%;
 }
 .contacts-list .icons .icon-trash {
-  background: url("http://91.234.35.26/iwiki-admin/v1.0.0/admin/img/icon-10.png") no-repeat 50% 50%;
 }
 .contacts-list .icons .icon {
   display: inline-block;
@@ -266,9 +264,9 @@ input {
 }
 .contacts-list .unit .name .avatar {
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
   margin: 0 16px 0 0;
   vertical-align: top;
 }
@@ -279,7 +277,8 @@ input {
   min-width: 75px;
   padding: 0 0 0 18px;
   color: #ffffff;
-  margin-left: 60px;
+  margin-left: 84px;
+  cursor: pointer;
 }
 .contacts-list .lab-warning {
   background: #f2a654;
@@ -292,4 +291,22 @@ input {
 }
 .contacts-list .lab-primary {
   background: #7266ba;
+}
+.contactIcons{
+  float: right;
+  margin-right: 76px;
+}
+.contactIcons :first-child{
+  color: #f2a654;
+  cursor: pointer;
+}
+.contactIcons :last-child{
+  color: #ff69b4;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.emptyList{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
 }
